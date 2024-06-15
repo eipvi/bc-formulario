@@ -27,7 +27,7 @@ router.post("/", async (req, res) => {
    // Configurações do email
    const info = await transporter.sendMail({
        from: `"${name}" <${email}>`,
-       to: 'satsconf@gmail.com', // Substitua pelo email do destinatário
+       to: 'negociodigitalpaula@gmail.com', // Substitua pelo email do destinatário
        subject: "Contato conectado",
        text: `Name: ${name}\nEmail: ${email}\nNúmero: ${number}`
    });
